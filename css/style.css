@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'Larselt';
+  src: url('../Font/Larsseit-Medium.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Larselt', Arial, Helvetica, sans-serif;
+    
+}
+
+a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 1px 60px rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+    width: 60%;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1rem;
+    max-width: 75%;
+    margin: 5px auto;
+    color: hsl(14, 16%, 43%, 0.80);
+}
+
+h1 {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+form input {
+    height: 42px;
+    padding-left: 10px;
+    border: 1px solid #7f645c;
+    border-radius: 5px;
+    background-color: #e5e0de;
+}
+
+form input::placeholder {
+    font-size: 12px;
+}
+
+button {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: .9rem;
+    padding: 0.7rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all .4s;
+}
+
+.buttondif {
+    padding: 0.3rem;
+}
+
+.cupon {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: rgb(255, 0, 0, 0.5);
+    font-style: italic;
+}
+
+.oculto {
+    display: none;
+}
+
+.title {
+    order: 1;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.1rem;
+    color: white;
+    margin-top: -50px;
+}
+
+.imgAlerta {
+    margin-top: -15px;
+    width: 60%;
+}
+
+.alerta {
+    width: 335px;
+    height: 438px;
+}
+
+.negrita {
+    font-weight: bolder;
+}
+
+.img-banner {
+    width: 100%;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2); 
+}
+
+.banner {
+    margin: 20px 0 5px;
+}
+
+.ver {
+    text-decoration: underline;
+    color: black;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.big {
+    font-size: 1.3rem;
+}
+
+.small {
+    font-size: 0.7rem;
+    margin-top: 0;
+}
+
+.verbutton {
+    background-color: white;
+    color: #7f645c;
+    border: 1px solid #7f645c;
+}
+
+.abutton i {
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
+
+.logoEclab {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+p.button {
+    font-size: 0.7rem;
+    margin: 0 auto;
+    transition: all .4s;
+}
+
+@media(min-width: 768px) {
+    .verbutton:hover, .verbutton:hover > p {
+        background-color:#7f645c;
+        color: white;
+    }
+
+    button:hover {
+        background-color: white;
+        color: #7f645c;
+        border: 1px solid #7f645c;
+    }
+}
