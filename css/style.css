@@ -89,8 +89,9 @@ button {
 }
 
 .error {
-    color: rgb(255, 0, 0, 0.5);
+    color: rgb(255, 0, 0);
     font-style: italic;
+    font-size: 0.8rem;
 }
 
 .oculto {
@@ -150,6 +151,12 @@ button {
     border: 1px solid #7f645c;
 }
 
+.call {
+    background-color: #7f645c;
+    color: white;
+    margin-top: 0px;
+}
+
 .abutton i {
     margin-right: 15px;
     font-size: 1.1rem;
@@ -175,6 +182,10 @@ p.button {
     transition: all .4s;
 }
 
+.callDesktop {
+    display: none;
+}
+
 @media(min-width: 768px) {
     .verbutton:hover {
         background-color:#7f645c;
@@ -185,5 +196,12 @@ p.button {
         background-color: white;
         color: #7f645c;
         border: 1px solid #7f645c;
+    }
+
+    .callDesktop {
+        display: block;
+    }
+    .callMobile {
+        display: none;
     }
 }

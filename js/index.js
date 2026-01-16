@@ -74,4 +74,27 @@ window.addEventListener('load', () => {
         }
     })
 
+    const btn = document.getElementById("telefonoDesktop");
+
+    $('desplegarDesktop').addEventListener('click', () => {
+        $("telefonoMobile").classList.toggle("oculto")
+        $("telefonoDesktop").classList.toggle("oculto")
+    })
+
+    $('desplegarMobile').addEventListener('click', () => {
+        $("telefonoMobile").classList.toggle("oculto")
+        $("telefonoDesktop").classList.toggle("oculto")
+    })
+
+    btn.addEventListener("click", () => {
+        const numero = "1-888-592-8325";
+
+    navigator.clipboard.writeText(numero).then(() => {
+        btn.textContent = "¡Copied to clipboard!";
+        setTimeout(() => {
+        btn.textContent = "Click to call 1-888-592-TEAK";
+            }, 2000);
+        });
+    });
+
 })
