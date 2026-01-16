@@ -42,6 +42,7 @@ p {
     max-width: 75%;
     margin: 5px auto;
     color: hsl(14, 16%, 43%, 0.80);
+    transition: all .4s;
 }
 
 h1 {
@@ -155,9 +156,17 @@ button {
 }
 
 .logoEclab {
-    margin-top: 30px;
-    text-align: center;
-    width: 100%;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    font-size: 12px;
+    color: #494b4a;
+}
+
+.logoEclab img {
+    width: 70%;
 }
 
 p.button {
@@ -167,7 +176,7 @@ p.button {
 }
 
 @media(min-width: 768px) {
-    .verbutton:hover, .verbutton:hover > p {
+    .verbutton:hover {
         background-color:#7f645c;
         color: white;
     }
