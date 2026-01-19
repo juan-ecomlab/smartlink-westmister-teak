@@ -19,6 +19,7 @@ body {
 a {
     width: 100%;
     text-decoration: none;
+    color: hsl(14, 16%, 43%, 0.80);
 }
 
 .conteiner {
@@ -39,7 +40,7 @@ a {
 p {
     font-size: 1rem;
     line-height: 1rem;
-    max-width: 75%;
+    max-width: 80%;
     margin: 5px auto;
     color: hsl(14, 16%, 43%, 0.80);
     transition: all .4s;
@@ -143,6 +144,16 @@ button {
 .small {
     font-size: 0.7rem;
     margin-top: 0;
+}
+
+.visit {
+    margin: 20px auto 0;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.visit:hover {
+    opacity: 0.7;
 }
 
 .verbutton {
